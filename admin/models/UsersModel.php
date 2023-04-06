@@ -55,9 +55,8 @@
 			//update name
 			//lay bien ket noi csdl
 			$conn = Connection::getInstance();
-			$password = md5($password);
-			$query = $conn->prepare("insert into users set name=:var_name,email=:var_email,password=:var_password");
-			$query->execute(["var_name"=>$name,"var_email"=>$email,"var_password"=>$password]);
+			$query = $conn->prepare("insert into users set name=:var_name,password=:var_password,email=:var_email");
+			$query->execute(["var_name"=>$name,"var_email"=>$email,"var_password"=>$var_password]);
 		}
 		//xoa ban ghi
 		public function modelDelete(){

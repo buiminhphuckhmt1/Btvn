@@ -1,13 +1,18 @@
 <?php 
- class HomeController extends Controller{
-    public function __construct(){
-        //kiem tra xem da dang nhap chua
-        $this->authentication();
-            // header("location:index.php?controller=login");
-    }
-    public function index(){
-        // return view::make("HomeView.php");
-        $this->loadView("HomeView.php");
-    }
- }
+	//HomeController ke thua class Controller
+	class HomeController extends Controller{
+		//hàm tạo là hàm mặc định được gọi đầu tiên
+		public function __construct(){
+			//kiểm tra xem user đã đăng nhập chưa
+			$this->authentication();
+			/*
+				if(isset($_SESSION['admin_email']) == false)
+					header("location:index.php?controller=login");
+			*/
+		}
+		public function index(){
+			//goi view
+			$this->loadView("HomeView.php");
+		}
+	}
  ?>

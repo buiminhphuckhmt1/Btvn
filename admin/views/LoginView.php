@@ -1,23 +1,10 @@
 <!DOCTYPE html>
-
-<!-- =========================================================
-* Sneat - Bootstrap 5 HTML Admin Template - Pro | v1.0.0
-==============================================================
-
-* Product Page: https://themeselection.com/products/sneat-bootstrap-html-admin-template/
-* Created by: ThemeSelection
-* License: You must have a valid license purchased in order to legally use the theme for your project.
-* Copyright ThemeSelection (https://themeselection.com)
-
-=========================================================
- -->
-<!-- beautify ignore:start -->
 <html
   lang="en"
   class="light-style customizer-hide"
   dir="ltr"
   data-theme="theme-default"
-  data-../assets/admin/layout2/../assets-path="../assets/admin/layout2/assets/"
+  data-assets-path="../assets/admin/layout2/assets/"
   data-template="vertical-menu-template-free"
 >
   <head>
@@ -27,7 +14,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Login Basic - Pages | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    <title>Login Admin website TN</title>
 
     <meta name="description" content="" />
 
@@ -61,7 +48,7 @@
 
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-    <script src="../assets/admin/layout2/../assets/js/config.js"></script>
+    <script src="../assets/admin/layout2/assets/js/config.js"></script>
   </head>
 
   <body>
@@ -75,7 +62,7 @@
             <div class="card-body">
               <!-- Logo -->
               <div class="app-brand justify-content-center">
-                <a href="../assets/admin/layout2/html/index.html" class="app-brand-link gap-2">
+                <a href="index.html" class="app-brand-link gap-2">
                   <span class="app-brand-logo demo">
                     <svg
                       width="25"
@@ -131,22 +118,29 @@
                       </g>
                     </svg>
                   </span>
-                  <span class="app-brand-text demo text-body fw-bolder">Sneat</span>
+                  <span class="app-brand-text demo text-body fw-bolder">Admin</span>
                 </a>
               </div>
               <!-- /Logo -->
-              <h4 class="mb-2">Welcome to Sneat! 👋</h4>
+              <h4 class="mb-2">Welcome to Admin! 👋</h4>
               <p class="mb-4">Please sign-in to your account and start the adventure</p>
 
-              <form id="formAuthentication" class="mb-3" action="index.php?&controller=login&action=doLogin" method="POST">
+              <form id="formAuthentication" class="mb-3" action="index.php?controller=login&action=doLogin" method="POST">
                 <div class="mb-3">
                   <label for="email" class="form-label">Email or Username</label>
-                  <input type="email" name="email" required class="form-control">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email or username"
+                    autofocus
+                  />
                 </div>
                 <div class="mb-3 form-password-toggle">
                   <div class="d-flex justify-content-between">
-                    <label for="Password" class="form-label">Password</label>
-                    <a href="../assets/admin/layout2/html/auth-forgot-password-basic.html">
+                    <label class="form-label" for="password">Password</label>
+                    <a href="auth-forgot-password-basic.html">
                       <small>Forgot Password?</small>
                     </a>
                   </div>
@@ -175,7 +169,7 @@
 
               <p class="text-center">
                 <span>New on our platform?</span>
-                <a href="../assets/admin/layout2/html/auth-register-basic.html">
+                <a href="auth-register-basic.html">
                   <span>Create an account</span>
                 </a>
               </p>
@@ -189,16 +183,16 @@
     <!-- / Content -->
 
     <div class="buy-now">
-      <!-- <a
+      <a
         href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/"
         target="_blank"
         class="btn btn-danger btn-buy-now"
         >Upgrade to Pro</a
-      > -->
+      >
     </div>
 
     <!-- Core JS -->
-    <!-- build:js ../assets/admin/layout2/assets/vendor/js/core.js -->
+    <!-- build:js assets/vendor/js/core.js -->
     <script src="../assets/admin/layout2/assets/vendor/libs/jquery/jquery.js"></script>
     <script src="../assets/admin/layout2/assets/vendor/libs/popper/popper.js"></script>
     <script src="../assets/admin/layout2/assets/vendor/js/bootstrap.js"></script>
